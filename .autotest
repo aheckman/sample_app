@@ -1,6 +1,7 @@
 require "autotest/growl"
 require "autotest/fsevent"
 
+require "spec/spec_helper"
 Autotest.add_hook :initialize do |autotest|
   autotest.add_mapping(/^spec\/integration\/.*_spec\.rb$/) do
     autotest.files_matching(/^spec\/integration\/.*_spec\.rb$/)
